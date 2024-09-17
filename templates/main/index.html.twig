@@ -8,21 +8,25 @@
 	<body class="bg-black">
 
 		<section>
-        
-        <div class="flex flex-row container mx-auto mt-[5%] ml-[25%] gap-3" id="card"></div>
 
-		<div class="flex justify-between">
+			<div class="flex flex-row container mx-auto mt-[5%] ml-[25%] gap-3" id="card"></div>
 
-		 <img class="h-[350px]" src="{{asset('image/reversecard.jpg')}}">
-		 <img class="h-[350px]" src="{{asset('image/reversecard.jpg')}}">
-		
-		</div>
-		
+			<div class="flex justify-between">
 
-		<div class="flex flex-row container mx-auto mt-[5%] ml-[25%] container" id="cardz"></div>
+				<img id="zoomable" class="h-[350px]" src="{{asset('image/reversecard.jpg')}}">
+				<div class="flex flex-col gap-7 pt-[5%]">
+					<p class="border border-4 border-gray-300 text-white py-20 px-20 font-semibold">Opponent card</p>
+					<p class="border border-4 border-gray-300 text-white py-20 px-20 font-semibold">Your card</p>
+				</div>
+				<img id="zoomable" class="h-[350px]" src="{{asset('image/reversecard.jpg')}}">
 
-        </section>
+			</div>
+
+
+			<div class="flex flex-row container mx-auto mt-[5%] ml-[25%]  gap-3 container" id="cardz"></div>
+
+		</section>
 
 	</body>
-    
+
 {% endblock %}
